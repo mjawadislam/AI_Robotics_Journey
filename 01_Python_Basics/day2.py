@@ -26,3 +26,12 @@ client_budget=float(input("Enter client budget in USD: "))
 tax_amount= client_budget * 0.10
 final_total= client_budget + tax_amount
 print(f"Original: ${client_budget} | Tax (10%): ${tax_amount} | Final Total: ${final_total}")
+
+# 4. Conditional Logic Client-Filter System
+project_budget= float(input("Enter project budget in USD: "))
+if project_budget >=100:
+    print("Project is Good")
+elif project_budget >=30:
+    print("Project is Average")
+else:
+    print("Project is Poor")

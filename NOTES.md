@@ -41,3 +41,14 @@
 ### Modern Output Formatting (f-strings)
 - Formatted string literals allow direct variable interpolation using `{variable_name}` without manual concatenation.
 - *Roman Urdu:* Quotes ke shuru mein `f` lagao aur text ke darmiyan `{variable}` likh do. Python khud value wahan print kar deta hai, bina kisi plus ya comma ke maslay ke.
+
+---
+
+### Conditional Logic (Decision Making)
+- `if`: Primary condition check. Evaluates truthiness before running indented block.
+  - *Roman Urdu:* Pehla faisla. Agar yeh shart sach hai to andar ka code chalega.
+- `elif` (Else If): Secondary sequential condition evaluated only if preceding checks fail.
+  - *Roman Urdu:* Agar pehli shart ghalat ho jaye, to doosri shart check karta hai.
+- `else`: Catch-all fallback executed when none of the conditions evaluate to `True`.
+  - *Roman Urdu:* Jab koi shart sach na nikle, to aakhir mein yeh code chalta hai.
+- Indentation (4 spaces) is strictly enforced by Python syntax to define code scope.
