@@ -52,3 +52,29 @@
 - `else`: Catch-all fallback executed when none of the conditions evaluate to `True`.
   - *Roman Urdu:* Jab koi shart sach na nikle, to aakhir mein yeh code chalta hai.
 - Indentation (4 spaces) is strictly enforced by Python syntax to define code scope.
+
+## Day 3: Collections (Lists) & Iteration (Loops)
+
+### Python Lists (`list`)
+- Ordered, mutable collections defined with square brackets `[]`.
+- **Zero-Based Indexing:** Accessing elements begins at `0` (`list[0]`), while negative indexing accesses elements from the end (`list[-1]`).
+- **Length (`len()`):** Returns the total count of elements inside a collection (e.g., `len(budgets)`).
+- **Dynamic Insertion:**
+  - `.append(value)`: Adds an item to the end of the list.
+  - `.insert(index, value)`: Inserts an item at a specific target position (`index, value`).
+- *Roman Urdu:* 
+  - List ek tokri hai jismein multiple values tarteeb se rakhte hain (`[]`).
+  - Computer ginti `0` se shuru karta hai, aur `-1` ka matlab sab se aakhri cheez.
+  - `len()` list ke andar total items ki ginti batata hai.
+  - `.append()` hamesha aakhir mein jorta hai; `.insert()` apni marzi ke number/index par naya item bitha deta hai.
+
+---
+
+### Iteration with `for` Loops
+- Automates repetitive actions across iterable collections.
+- **Loop Variable:** Temporarily holds the current item being processed during each cycle.
+- **Scope & Indentation:** Block execution relies on a strict 4-space indentation following the `:` token. Without indentation, code executes outside loop scope.
+- *Roman Urdu (Toffee Tokri Rule):*
+  - `budgets` toffee ki tokri hai aur `b` (ya `single_budget`) aapka haath hai jo ek waqt mein sirf ek toffee uthata hai.
+  - Har toffee par calculation (sticker) lagti hai aur computer agle item par chala jata hai jab tak tokri khali na ho jaye.
+  - Loop ke andar chalne wali lines ko `Tab` (4 spaces) aage dhakelna lazmi hai, warna computer unhe loop ka hissa nahi manta.
