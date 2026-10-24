@@ -28,3 +28,10 @@ for single_budget in budgets:
     tax= single_budget*0.10
     final_amount= single_budget+tax  
     print(f"Orignal: ${single_budget}| Tax: ${tax} | Total: Final Amount ${final_amount}")
+
+    # TEST
+    approved_projects= []
+    for budget in budgets:
+        if(budget >=50):
+            approved_projects.append(budget)
+    print(approved_projects)
