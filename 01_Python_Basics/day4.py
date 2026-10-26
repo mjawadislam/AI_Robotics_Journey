@@ -58,3 +58,20 @@ projects = [
 print("\n--- Project Overview ---")
 for proj in projects:
     print(f"Client: {proj['client']} | Budget: ${proj['budget']}")
+
+
+    raw_leads = [
+    {"name": "   ali khan   ", "raw_budget": " $1,200 "},
+    {"name": "sara ahmed  ", "raw_budget": " $450 "},
+    {"name": "  usman tariq ", "raw_budget": " $2,500 "}
+]
+clean_leads = []
+for lead in raw_leads:
+    clean_name=lead["name"].strip()
+    cleaned_name=clean_name.title()
+
+    clean_budget= lead["raw_budget"].strip().replace("$","").replace(",","")
+    numeric_budget= float(clean_budget)
+    clean_leads.append({"name": cleaned_name, "budget": numeric_budget})
+print("\nFinal Cleaned Leads:")
+print(clean_leads)
