@@ -78,3 +78,33 @@
   - `budgets` toffee ki tokri hai aur `b` (ya `single_budget`) aapka haath hai jo ek waqt mein sirf ek toffee uthata hai.
   - Har toffee par calculation (sticker) lagti hai aur computer agle item par chala jata hai jab tak tokri khali na ho jaye.
   - Loop ke andar chalne wali lines ko `Tab` (4 spaces) aage dhakelna lazmi hai, warna computer unhe loop ka hissa nahi manta.
+
+  ## Day 4: String Manipulation & Python Dictionaries (Structured Records)
+
+### 1. String Cleaning & Transformation (Text Data Ki Safai)
+- **English**: Real-world raw data from web scrapers or spreadsheets often contains unwanted whitespace and special characters that cause runtime type errors.
+- **Roman Urdu**: Internet ya scrapers se aane wala data hamesha ganda hota hai; us par mathematical operations chalane se pehle safai lazmi hoti hai.
+  - `.strip()`: Removes leading and trailing spaces / Faltu aage aur peeche ki spaces khatam karta hai.
+  - `.title()` / `.lower()` / `.upper()`: Standardizes character casing / Text ko ek standard format ya capital-small pattern mein convert karta hai.
+  - `.replace(old, new)`: Swaps or strips specific characters (e.g., stripping `$` and `,` before converting to numeric floats) / Unwanted symbols ko remove ya tabdeel karta hai taake number extract ho sake.
+  - `repr(string)`: Prints the raw representation including invisible characters and whitespaces for debugging / String ki asli haalat dikhata hai taake hidden spaces nazar aa sakein.
+
+### 2. Splitting & Joining Data (Data Ko Todna Aur Jorna)
+- **`.split(delimiter)`**: 
+  - **English**: Breaks a string into substrings based on a specific separator and always returns a `list`.
+  - **Roman Urdu**: Ek lambi text string ko kisi nishaan (jaise comma `,`) se tod kar hamesha ek `list` banata hai.
+- **`delimiter.join(list)`**: 
+  - **English**: Concatenates elements of a sequence into a single string using the specified separator.
+  - **Roman Urdu**: List ke items ko kisi specific symbol (jaise ` | `) ke sath jor kar wapas ek single string bana deta hai.
+
+### 3. Python Dictionaries (`dict` - Key-Value Pairs)
+- **English**: Dictionaries store structured entity records using labeled key-value mappings instead of sequential positional indices.
+- **Roman Urdu**: List mein sirf index number (0, 1) hota hai jabke Dictionary mein har value ka apna label (Key) hota hai, bilkul database row ya JSON format ki tarah.
+- **The Bracket Hierarchy (Brackets Ka Khel)**:
+  - `{}`: Creating/defining a dictionary structure / Nayi dictionary ka dabba banane ke liye.
+  - `[]`: Accessing values or dynamically assigning/updating keys (`dict[key] = value`) / Andar se data nikalne ya nayi key jodkar update karne ke liye.
+  - `()`: Executing functions or methods (`print()`, `.strip()`) / Action ya function run karne ke liye.
+
+### 4. Nested Collections: List of Dictionaries (Database Table Format)
+- **English**: A list holding multiple dictionary elements represents a relational table or JSON array, where the outer list acts as the container and each dictionary acts as an independent row.
+- **Roman Urdu**: Bahar wali list `[]` ek folder ki tarah saare records ko sambhalti hai, aur andar wali har dictionary `{}` ek individual row ya client file hoti hai.
